@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                width: 100 vw;
+                height:100 vh;
+                position: relative;
+            }
+
+            #drag{
+                position: absolute;
+                width:100px;
+                height:100px;
+                background-color:lightblue;
+            }
+            #drag2{
+                position: absolute;
+                width:200px;
+                height:300px;
+                background-color:lightcoral; 
+            }
+        </style>
+    </head>
+    <body>
+            <div id="drag"></div>      
+            <div id="drag2"></div>      
+    </body>
+    <script src="drag.js"></script>
+    <script>
+        (function(){
+         const dragBox = new drag('drag')
+         const dragBox2 = new drag('drag2')
+        })()
+    </script>
+</html>
